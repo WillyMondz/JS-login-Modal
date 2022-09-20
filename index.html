@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal de login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="btn-container">
+    <p><a data-modal="abrir" href=''>Login</a></p>
+  </div>
+  <section class="modal-container" data-modal="container">
+  <div class="box">
+    <button data-modal="fechar" class="fechar">X</button>
+    <form action="">
+      <fieldset>
+        <legend>Login</legend>
+        <div class="inputBox">
+          <input type="text" for="name" id="name" class="User" required>
+          <label for="name" class="label">Usuario</label>
+        </div>
+         <div class="inputBox">
+          <input type="password" for='password' id="password" class="User" required>
+          <label for="password" class="label">Senha</label>
+        </div>
+        <input type="submit" id="submit"
+        class="inputBox">
+      </fieldset>
+    </form>
+  </div>
+</section>
+<script src='script.js'></script>
+</body>
+</html>
